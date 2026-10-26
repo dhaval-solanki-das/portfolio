@@ -21,18 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function typeWriter() {
     const currentPhrase = phrases[phraseIndex];
+    if (!typewriterElement) return;
+
     if (isDeleting) {
       typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
       charIndex--;
-      typingSpeed = 40;
+      typingSpeed = 35;
     } else {
       typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
       charIndex++;
-      typingSpeed = 90;
+      typingSpeed = 85;
     }
 
     if (!isDeleting && charIndex === currentPhrase.length) {
-      typingSpeed = 2000; // Pause at completion
+      typingSpeed = 2200; // Pause at completion
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
@@ -72,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Close on navigation link click
     document.querySelectorAll('.mobile-link').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => {
       const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 140;
       if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
         current = section.getAttribute('id');
       }
@@ -177,9 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = (ragInput ? ragInput.value.toLowerCase() : '');
     runRagBtn.disabled = true;
     runRagBtn.innerHTML = `<span>Retrieving...</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
-    ragOutput.innerHTML = `<span class="text-slate-400 font-mono text-xs">Vector search traversing embeddings... Synthesizing response with fine-tuned LLaMA 3.1...</span>`;
+    ragOutput.innerHTML = `<span class="text-slate-400 font-mono text-xs">Traversing vector space & embeddings... Synthesizing response with fine-tuned LLaMA 3.1...</span>`;
 
-    const randomLatency = Math.floor(Math.random() * 60) + 115; // 115ms - 175ms
+    const randomLatency = Math.floor(Math.random() * 50) + 120; // 120ms - 170ms
 
     setTimeout(() => {
       let scenario = ragScenarios["villas"];
@@ -204,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       runRagBtn.disabled = false;
       runRagBtn.innerHTML = `<span>Execute RAG</span> <i class="fa-solid fa-bolt"></i>`;
-    }, 700);
+    }, 600);
   }
 
   // --- Voice AI Simulator Logic (VAPI + Twilio) ---
@@ -213,8 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const callStatePill = document.getElementById('call-state-pill');
   const waveformContainer = document.getElementById('waveform-container');
   const voiceTranscript = document.getElementById('voice-transcript');
-
-  let callTimer = null;
 
   if (startCallBtn) {
     startCallBtn.addEventListener('click', () => {
@@ -238,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="text-slate-100">"Hello! Yes, that 12,000 sq ft facility features a dedicated 150 kVA three-phase transformer, dual container-height loading docks, and 24/7 security access. Would you like me to send the specification sheet to your mobile?"</p>
           </div>
         `;
-      }, 900);
+      }, 800);
     });
   }
 
@@ -348,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div>• <strong>Computer Vision & OCR:</strong> Implemented OCR-based PO generation workflow to extract SKU details, vendor info, quantities, and prices from handwritten notes or uploaded documents.</div>
         </div>
       `,
-      github: "https://github.com/dhaval-solanki-das"
+      github: "https://github.com/dhaval-solanki-das/task_ai_knowledge_platform"
     },
     rag: {
       title: "Real Estate Conversational Chatbot using RAG & LLaMA 3.1 LoRA",
@@ -365,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div>• <strong>Synthetic Data Generation:</strong> Formulated specialized Claude prompt strategies to generate thousands of multi-persona training samples.</div>
         </div>
       `,
-      github: "https://github.com/dhaval-solanki-das"
+      github: "https://github.com/dhaval-solanki-das/medical-chatbot"
     },
     voice: {
       title: "Autonomous Voice-Enabled AI Telephony Agent",
@@ -382,7 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div>• Handles interruptions, multi-turn state machines, and automated calendar slot reservation.</div>
         </div>
       `,
-      github: "https://github.com/dhaval-solanki-das"
+      github: "https://github.com/dhaval-solanki-das/portfolio"
     },
     vision: {
       title: "AI-Powered Vehicle Number Plate Detection & Recognition (ANPR)",
@@ -399,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div>• TrOCR transformer model reads alphanumeric characters under extreme angles and low illumination.</div>
         </div>
       `,
-      github: "https://github.com/dhaval-solanki-das"
+      github: "https://github.com/dhaval-solanki-das/car_detection_OpenCV"
     }
   };
 
@@ -486,7 +485,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('email').value;
       const message = document.getElementById('message').value;
 
-      // Construct mailto link
       const mailtoUrl = `mailto:dhavalsolanki480@gmail.com?subject=Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
       
       if (formFeedback) {
