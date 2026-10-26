@@ -21,15 +21,14 @@ Ready for **instant 1-click deployment** on [Netlify](https://netlify.app) or [V
   - **Vision & OCR PO / Number Plate Extractor**: Switches between Purchase Order document extraction (StoreTransform) and Vehicle Number Plate detection (ANPR with YOLO and TrOCR).
 - **Global Experience Matrix**:
   - 🇦🇺 **Australia (AchyutLabs Pty Ltd)**: Melbourne & Brisbane accounts, digital growth analytics, search intelligence.
-  - 🇺🇸 🌐 **USA & Cross-Border (StoreTransform)**: Automated PO parsing, Computer Vision OCR, Sellercloud & GCP sync, Natural Language to SQL agents (Claude/Gemini).
-  - 🇮🇳 **India & Global (AdvaitUX Pvt Ltd)**: LLaMA 3.1 LoRA fine-tuning, RAG conversational chatbots, VAPI/Twilio voice agents.
-  - 🇮🇳 **Innovatics LLP**: Growth data analytics and performance systems.
+  - 🇺🇸 🌐 **USA & Cross-Border (StoreTransform)**: Automated PO parsing, Computer Vision OCR, Sellercloud & GCP sync, Natural Language to SQL Data Agents (Claude/Gemini).
+  - 🇮🇳 **India & Global (AdvaitUX Pvt Ltd)**: LLaMA 3.1 LoRA fine-tuning, RAG conversational chatbots, VAPI/Twilio telephony voice agents.
+  - 🇬🇧 🇪🇺 **UK, Europe & Worldwide Clients**: Async cross-timezone collaboration delivering multi-agent workflows (LangGraph, make.com, n8n).
+- **Core AI & Agentic Stack**:
+  - Agentic AI, Autonomous AI Agents, Multi-Agent Intelligent Systems, LangGraph, LangChain, LangSmith, Data Agents, Computer Vision (YOLO, OpenCV, TrOCR), Automation (n8n, make.com), Vector DBs (Pinecone, ChromaDB, FAISS).
 - **Interactive Project Showcase**:
   - Filter by *Generative AI & LLMs*, *Autonomous Agents*, or *Computer Vision & OCR*.
   - Full modal deep-dive drawer for architectural walkthroughs and metrics.
-- **Interactive Tech Radar & Certifications**:
-  - Grouped into Generative AI, Autonomous Agents, Computer Vision & ML, and Infrastructure.
-  - Full display of MBA & BBA credentials (GTU) and verified certifications (Simplilearn, Desire Infotech, NoviTech).
 - **1-Click Contact & Mail Client Integration**:
   - Copy email button with animated toast notification.
   - WhatsApp direct connect link.
