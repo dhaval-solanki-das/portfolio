@@ -101,7 +101,6 @@ dhaval-portfolio/
 - **Email**: [dhavalsolanki480@gmail.com](mailto:dhavalsolanki480@gmail.com)
 - **Phone**: (+91) 9106862224
 - **GitHub**: [github.com/dhaval-solanki-das](https://github.com/dhaval-solanki-das)
-- **Location**: Ahmedabad & Surat, Gujarat, India (Open to Remote Worldwide & Relocation)
 
 ---
 
