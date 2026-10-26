@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhaval Solanki | AI-ML Developer & Agentic AI Specialist</title>
+  <meta name="description" content="Portfolio of Dhaval Solanki - AI-ML Developer specializing in Generative AI, Autonomous AI Agents, RAG pipelines, LLM Fine-Tuning (LoRA), and Computer Vision. Experience with global clients across Australia, USA, and India.">
+  <meta name="keywords" content="Dhaval Solanki, AI ML Developer, Generative AI, RAG, LLM, Agentic AI, Computer Vision, LLaMA 3.1, LoRA, VAPI, Twilio, Achyut Labs, StoreTransform, AdvaitUX, Machine Learning Engineer">
+  <meta name="author" content="Dhaval Solanki">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dhaval-solanki.netlify.app/">
+  <meta property="og:title" content="Dhaval Solanki | AI-ML Developer & Agentic AI Specialist">
+  <meta property="og:description" content="AI-ML Developer specializing in LLM fine-tuning, RAG, autonomous agents, and computer vision with cross-border client impact in Australia, USA & India.">
+  <meta property="og:image" content="./assets/avatar.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Dhaval Solanki | AI-ML Developer">
+  <meta property="twitter:description" content="Building enterprise-grade AI agents, RAG systems, and intelligent computer vision pipelines.">
+  <meta property="twitter:image" content="./assets/avatar.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300f2fe'/%3E%3Cstop offset='100%25' stop-color='%237928ca'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%2307090e'/%3E%3Ctext x='50%25' y='64%25' font-size='48' font-weight='900' font-family='sans-serif' fill='url(%23g)' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for clean UI symbols -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- Ambient Light Orbs -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="cyber-grid-overlay"></div>
+  </div>
+
+  <!-- Interactive Cursor Follower Glow -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Navigation Bar -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="nav-glass-container my-3 px-6 py-3 rounded-2xl flex items-center justify-between border border-white/10 shadow-2xl backdrop-blur-xl">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 via-indigo-500 to-purple-600 p-[2px] transition-transform duration-300 group-hover:scale-105 shadow-lg shadow-cyan-500/20">
+            <div class="w-full h-full bg-[#0a0d14] rounded-[10px] flex items-center justify-center font-outfit font-black text-cyan-400 text-lg">
+              DS
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-outfit font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dhaval Solanki</span>
+            <span class="text-[10px] font-mono text-cyan-400 tracking-wider uppercase font-semibold">AI / ML Engineer</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#about" class="nav-link hover:text-cyan-400 transition-colors">About</a>
+          <a href="#global-experience" class="nav-link hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+            <span>Global Footprint</span>
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          </a>
+          <a href="#experience" class="nav-link hover:text-cyan-400 transition-colors">Experience</a>
+          <a href="#projects" class="nav-link hover:text-cyan-400 transition-colors">Projects</a>
+          <a href="#ai-playground" class="nav-link hover:text-cyan-400 transition-colors text-purple-300 font-semibold flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles text-xs text-cyan-400"></i>
+            <span>AI Playground</span>
+          </a>
+          <a href="#skills" class="nav-link hover:text-cyan-400 transition-colors">Skills</a>
+          <a href="#education" class="nav-link hover:text-cyan-400 transition-colors">Education</a>
+          <a href="#contact" class="nav-link hover:text-cyan-400 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Quick Actions -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://github.com/dhaval-solanki-das" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile">
+            <i class="fa-brands fa-github text-lg"></i>
+          </a>
+          <a href="#contact" class="btn-primary text-xs uppercase tracking-wider font-bold py-2.5 px-5 rounded-xl">
+            Hire / Connect
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="xl:hidden w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-200 hover:text-cyan-400 focus:outline-none" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-lg" id="menu-icon"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden xl:hidden mobile-menu-glass rounded-2xl border border-white/10 p-6 shadow-2xl backdrop-blur-2xl transition-all duration-300">
+        <div class="flex flex-col gap-4 text-base font-medium text-slate-200">
+          <a href="#about" class="mobile-link py-2 border-b border-white/5">About</a>
+          <a href="#global-experience" class="mobile-link py-2 border-b border-white/5 flex items-center justify-between">
+            <span>Global Footprint</span>
+            <span class="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-0.5 rounded-full">AU • US • IN</span>
+          </a>
+          <a href="#experience" class="mobile-link py-2 border-b border-white/5">Experience</a>
+          <a href="#projects" class="mobile-link py-2 border-b border-white/5">Projects</a>
+          <a href="#ai-playground" class="mobile-link py-2 border-b border-white/5 text-cyan-400 font-semibold flex items-center gap-2">
+            <i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Interactive AI Playground
+          </a>
+          <a href="#skills" class="mobile-link py-2 border-b border-white/5">Skills & Tools</a>
+          <a href="#education" class="mobile-link py-2 border-b border-white/5">Education & Certifications</a>
+          <a href="#contact" class="mobile-link py-2">Contact</a>
+          <div class="pt-4 flex items-center gap-3">
+            <a href="#contact" class="btn-primary w-full text-center py-3 rounded-xl font-bold text-sm">
+              Get in Touch
+            </a>
+            <a href="https://github.com/dhaval-solanki-das" target="_blank" rel="noopener noreferrer" class="btn-secondary py-3 px-4 rounded-xl">
+              <i class="fa-brands fa-github text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-24 md:pt-28">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="min-h-[92vh] flex items-center justify-center py-12 md:py-20 relative">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Left Content -->
+          <div class="lg:col-span-7 flex flex-col gap-6 text-left">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 w-fit backdrop-blur-md">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              </span>
+              <span class="text-xs font-mono font-medium text-cyan-300 tracking-wide">
+                Available for Global AI Roles & Client Engagements
+              </span>
+            </div>
+
+            <!-- Main Heading with Dynamic Typewriter -->
+            <div>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-outfit font-black tracking-tight leading-[1.1] text-white">
+                Hi, I'm <span class="gradient-text">Dhaval Solanki</span>
+              </h1>
+              <div class="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-300 font-outfit flex items-center flex-wrap gap-2">
+                <span>Building</span>
+                <span id="typewriter-text" class="text-cyan-400 font-mono underline decoration-cyan-500/40 underline-offset-4"></span>
+                <span class="typewriter-cursor">|</span>
+              </div>
+            </div>
+
+            <!-- Subtitle / Bio -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+              Innovative <strong class="text-white font-medium">AI-ML Developer</strong> specialized in production-grade 
+              <span class="text-cyan-400 font-mono">Agentic AI</span>, <span class="text-purple-400 font-mono">RAG Pipelines</span>, 
+              <span class="text-emerald-400 font-mono">LLaMA 3.1 LoRA Fine-Tuning</span>, and Computer Vision OCR. 
+              Delivering high-impact automation with clients across <strong class="text-white font-medium">Australia 🇦🇺, United States 🇺🇸, and India 🇮🇳</strong>.
+            </p>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#projects" class="btn-primary px-7 py-3.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40">
+                <span>Explore Projects</span>
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+              <a href="#ai-playground" class="btn-secondary px-6 py-3.5 rounded-xl font-semibold flex items-center gap-2">
+                <i class="fa-solid fa-robot text-cyan-400"></i>
+                <span>Test Live AI Demo</span>
+              </a>
+              <a href="#contact" class="btn-ghost px-5 py-3.5 rounded-xl font-medium text-slate-300 hover:text-white flex items-center gap-2">
+                <i class="fa-regular fa-envelope text-slate-400"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Highlights / Stat Counters -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">
+              <div class="metric-card p-3 rounded-xl bg-white/[0.03] border border-white/5">
+                <div class="text-2xl sm:text-3xl font-black font-outfit text-cyan-400">1+ yr</div>
+                <div class="text-xs text-slate-400 font-mono">AI/ML Production</div>
+              </div>
+              <div class="metric-card p-3 rounded-xl bg-white/[0.03] border border-white/5">
+                <div class="text-2xl sm:text-3xl font-black font-outfit text-purple-400">4+</div>
+                <div class="text-xs text-slate-400 font-mono">Core AI Architectures</div>
+              </div>
+              <div class="metric-card p-3 rounded-xl bg-white/[0.03] border border-white/5">
+                <div class="text-2xl sm:text-3xl font-black font-outfit text-emerald-400">3</div>
+                <div class="text-xs text-slate-400 font-mono">Global Regions (AU, US, IN)</div>
+              </div>
+              <div class="metric-card p-3 rounded-xl bg-white/[0.03] border border-white/5">
+                <div class="text-2xl sm:text-3xl font-black font-outfit text-indigo-400">8.6+</div>
+                <div class="text-xs text-slate-400 font-mono">Academic CPI (MBA/BBA)</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Avatar & Tech Hologram -->
+          <div class="lg:col-span-5 flex justify-center relative">
+            <div class="relative w-72 sm:w-80 md:w-96 aspect-square">
+              
+              <!-- Glowing Animated Ring Background -->
+              <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-purple-600 opacity-40 blur-2xl animate-pulse"></div>
+              
+              <!-- Avatar Frame Card -->
+              <div class="relative w-full h-full rounded-3xl overflow-hidden border-2 border-cyan-400/30 bg-[#0d121f] shadow-2xl p-2 group">
+                <div class="w-full h-full rounded-2xl overflow-hidden relative">
+                  <img src="./assets/avatar.jpg" alt="Dhaval Solanki - AI ML Developer" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="eager">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#0a0d14] via-transparent to-transparent opacity-80"></div>
+                  
+                  <!-- Bottom Overlay Chips -->
+                  <div class="absolute bottom-4 left-4 right-4 flex flex-col gap-2">
+                    <div class="flex items-center justify-between text-xs font-mono text-cyan-300 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-cyan-500/20">
+                      <span><i class="fa-solid fa-code-branch mr-1 text-cyan-400"></i> AdvaitUX • Surat</span>
+                      <span class="text-emerald-400 font-bold">Active</span>
+                    </div>
+                    <div class="text-[11px] text-slate-300 font-sans bg-black/50 backdrop-blur-md p-2 rounded-lg border border-white/10">
+                      Fine-Tuning LLaMA 3.1 & Building Real-Time Voice Agents (VAPI)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-top-right">
+                <i class="fa-solid fa-brain text-purple-400"></i>
+                <span>LLaMA 3.1 LoRA</span>
+              </div>
+              <div class="floating-badge badge-bottom-left">
+                <i class="fa-solid fa-microphone-lines text-cyan-400"></i>
+                <span>Voice AI (VAPI/Twilio)</span>
+              </div>
+              <div class="floating-badge badge-mid-left">
+                <i class="fa-solid fa-eye text-emerald-400"></i>
+                <span>YOLO & OCR</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- GLOBAL EXPERIENCE & CLIENT FOOTPRINT (AUSTRALIA, USA, INDIA) -->
+    <section id="global-experience" class="py-20 relative border-t border-white/5 bg-[#080b12]/80">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-4">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Cross-Border Impact & Multi-National Collaboration</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white tracking-tight">
+            Global Client <span class="gradient-text">Footprint</span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-base sm:text-lg">
+            Extensive experience collaborating with agencies and enterprise clients across diverse geographies, 
+            delivering AI pipelines, e-commerce automation, and digital growth systems.
+          </p>
+        </div>
+
+        <!-- Global Region Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Australia Card -->
+          <div class="global-card group rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-[#111726] to-[#0b0f19] border border-cyan-500/20 hover:border-cyan-400/60 transition-all duration-300 relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all"></div>
+            
+            <div class="flex items-center justify-between mb-5">
+              <div class="text-4xl">🇦🇺</div>
+              <span class="text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded-md border border-cyan-500/30">
+                Australia
+              </span>
+            </div>
+
+            <h3 class="text-xl font-bold font-outfit text-white group-hover:text-cyan-400 transition-colors">
+              AchyutLabs Pty Ltd
+            </h3>
+            <div class="text-xs font-mono text-cyan-300/80 mt-1 mb-4">
+              Australian-Based Tech & Digital Agency
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-5">
+              Executed search intelligence, digital growth marketing, and organic visibility systems for Australian businesses and international clients. Focused on data-driven audience acquisition, multi-channel growth, and performance analytics.
+            </p>
+
+            <div class="pt-4 border-t border-white/10 flex flex-wrap gap-2">
+              <span class="skill-pill-sm">Australian Market</span>
+              <span class="skill-pill-sm">SEO & SMM</span>
+              <span class="skill-pill-sm">Data Growth Analytics</span>
+            </div>
+          </div>
+
+          <!-- USA / Global Cross-Border Card (StoreTransform) -->
+          <div class="global-card group rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-[#111726] to-[#0b0f19] border border-purple-500/20 hover:border-purple-400/60 transition-all duration-300 relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all"></div>
+            
+            <div class="flex items-center justify-between mb-5">
+              <div class="text-4xl">🇺🇸 🌐</div>
+              <span class="text-xs font-mono uppercase tracking-wider text-purple-300 bg-purple-950/80 px-2.5 py-1 rounded-md border border-purple-500/30">
+                USA & Global
+              </span>
+            </div>
+
+            <h3 class="text-xl font-bold font-outfit text-white group-hover:text-purple-300 transition-colors">
+              StoreTransform
+            </h3>
+            <div class="text-xs font-mono text-purple-300/80 mt-1 mb-4">
+              E-Commerce AI & Automation Consultancy
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-5">
+              Engineered intelligent PO generation systems with OCR & Computer Vision for US/UK merchants. Integrated natural-language SQL Data Agents powered by Claude & Gemini, synchronizing Sellercloud and Google Cloud inventory databases.
+            </p>
+
+            <div class="pt-4 border-t border-white/10 flex flex-wrap gap-2">
+              <span class="skill-pill-sm">OCR & Computer Vision</span>
+              <span class="skill-pill-sm">Sellercloud ERP</span>
+              <span class="skill-pill-sm">Gemini / Claude SQL</span>
+            </div>
+          </div>
+
+          <!-- India / Global AI Engineering Card (AdvaitUX) -->
+          <div class="global-card group rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-[#111726] to-[#0b0f19] border border-emerald-500/20 hover:border-emerald-400/60 transition-all duration-300 relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
+            
+            <div class="flex items-center justify-between mb-5">
+              <div class="text-4xl">🇮🇳</div>
+              <span class="text-xs font-mono uppercase tracking-wider text-emerald-300 bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-500/30">
+                India (HQ) & Remote
+              </span>
+            </div>
+
+            <h3 class="text-xl font-bold font-outfit text-white group-hover:text-emerald-300 transition-colors">
+              AdvaitUX Pvt Ltd
+            </h3>
+            <div class="text-xs font-mono text-emerald-300/80 mt-1 mb-4">
+              AI-First Product & Engineering Studio
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-5">
+              Spearheading advanced Generative AI development: Fine-tuned LLaMA 3.1 with LoRA, developed context-aware Real Estate RAG pipelines, and built autonomous two-way voice agents utilizing VAPI, Twilio, and real-time STT/TTS models.
+            </p>
+
+            <div class="pt-4 border-t border-white/10 flex flex-wrap gap-2">
+              <span class="skill-pill-sm">LLaMA 3.1 LoRA</span>
+              <span class="skill-pill-sm">VAPI + Twilio Voice</span>
+              <span class="skill-pill-sm">Vector RAG</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Global Workflow Summary -->
+        <div class="mt-12 p-6 rounded-2xl bg-white/[0.02] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl flex-shrink-0">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div>
+              <div class="font-outfit font-bold text-white text-base">Seamless Async & Cross-Timezone Collaboration</div>
+              <div class="text-slate-400 text-xs sm:text-sm">Comfortable working across AEST (Australia), EST/PST (USA), and IST (India) with robust documentation and CI/CD communication.</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-secondary whitespace-nowrap text-xs font-bold uppercase tracking-wider py-2.5 px-5 rounded-xl">
+            Book an Intro Call
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INTERACTIVE AI PLAYGROUND (HIGH LEVEL WOW FEATURE) -->
+    <section id="ai-playground" class="py-20 relative border-t border-white/5 bg-[#0a0e1a]">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-purple-400 text-xs font-mono mb-4">
+            <i class="fa-solid fa-terminal"></i>
+            <span>Interactive Architecture Sandbox</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white tracking-tight">
+            Live AI <span class="gradient-text">Playground</span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-base sm:text-lg">
+            Experience my AI architectures in action. Test simulated real-world scenarios for RAG retrieval, 
+            telephony voice agents (VAPI/Twilio), and computer vision OCR data extraction.
+          </p>
+        </div>
+
+        <!-- Playground Shell Container -->
+        <div class="max-w-4xl mx-auto rounded-3xl bg-[#0e1322] border border-white/10 shadow-2xl overflow-hidden backdrop-blur-2xl">
+          
+          <!-- Playground Header & Mode Switcher -->
+          <div class="p-4 sm:p-5 border-b border-white/10 bg-[#080b14] flex flex-wrap items-center justify-between gap-4">
+            
+            <!-- Terminal Controls -->
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+              <span class="ml-2 font-mono text-xs text-slate-400 hidden sm:inline">dhaval@ai-runtime:~/models</span>
+            </div>
+
+            <!-- Simulator Tab Selector -->
+            <div class="flex items-center gap-1.5 p-1 rounded-xl bg-white/5 border border-white/10 text-xs font-mono">
+              <button class="playground-tab active" data-tab="rag">
+                <i class="fa-solid fa-database mr-1"></i> RAG Semantic Engine
+              </button>
+              <button class="playground-tab" data-tab="voice">
+                <i class="fa-solid fa-headset mr-1"></i> Voice AI (VAPI)
+              </button>
+              <button class="playground-tab" data-tab="vision">
+                <i class="fa-solid fa-barcode mr-1"></i> Vision OCR / PO
+              </button>
+            </div>
+
+          </div>
+
+          <!-- TAB 1: RAG RETRIEVAL ENGINE SIMULATOR -->
+          <div id="tab-rag" class="playground-view p-6 sm:p-8 flex flex-col gap-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4">
+              <div>
+                <h4 class="text-white font-bold font-outfit text-lg flex items-center gap-2">
+                  <span>Real Estate RAG Pipeline</span>
+                  <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/30">LLaMA 3.1 LoRA + Claude</span>
+                </h4>
+                <p class="text-xs text-slate-400 mt-1">Queries vector index & returns grounded property intelligence with cosine score.</p>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+                <span>Latency:</span>
+                <span id="rag-latency" class="text-emerald-400 font-bold">138 ms</span>
+              </div>
+            </div>
+
+            <!-- Sample Query Prompts -->
+            <div>
+              <div class="text-xs font-mono text-slate-400 mb-2">Select a test query or type your own:</div>
+              <div class="flex flex-wrap gap-2">
+                <button class="rag-sample-btn" data-query="Show 3-bedroom waterfront villas in Gold Coast under $2.2M with private marina">
+                  "Waterfront villas in Gold Coast under $2.2M..."
+                </button>
+                <button class="rag-sample-btn" data-query="Compare rental yield for modern 2-bed apartments in Surat vs Ahmedabad">
+                  "Rental yield: Surat vs Ahmedabad..."
+                </button>
+                <button class="rag-sample-btn" data-query="What are the local council zoning permits required for adding an ADU guest house?">
+                  "Council zoning rules for ADU guest house..."
+                </button>
+              </div>
+            </div>
+
+            <!-- Input Bar -->
+            <div class="flex items-center gap-3">
+              <div class="relative flex-1">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                <input type="text" id="rag-query-input" value="Show 3-bedroom waterfront villas in Gold Coast under $2.2M with private marina" class="w-full bg-[#080c16] border border-white/10 rounded-xl py-3 pl-11 pr-4 text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-sans transition-colors">
+              </div>
+              <button id="run-rag-btn" class="btn-primary py-3 px-6 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                <span>Execute RAG</span>
+                <i class="fa-solid fa-bolt"></i>
+              </button>
+            </div>
+
+            <!-- Simulated Output Terminal -->
+            <div class="rounded-xl bg-[#070a12] border border-white/10 p-5 font-mono text-xs space-y-3">
+              <div class="flex items-center justify-between text-slate-400 border-b border-white/5 pb-2">
+                <span class="text-cyan-400 font-bold"><i class="fa-solid fa-network-wired mr-1"></i> Retrieved Vector Nodes & Grounded Synthesis</span>
+                <span id="rag-status-badge" class="text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded text-[10px] border border-emerald-500/30">Vector Similarity: 0.942</span>
+              </div>
+              <div id="rag-retrieved-chunks" class="text-slate-400 space-y-1.5 pl-2 border-l-2 border-cyan-500/40">
+                <div class="text-slate-300 font-semibold text-[11px]">[Grounding Chunk #1 - Property ID: AU-GC-8492]</div>
+                <div>"Sanctuary Cove Villa 14: 3 Beds, 3.5 Baths, private pontoon dock, 24/7 security. Listed at AUD $1,980,000. HOA fees $420/quarter."</div>
+              </div>
+              <div id="rag-synthesized-output" class="text-slate-100 bg-white/[0.03] p-3 rounded-lg border border-white/5 leading-relaxed font-sans text-sm">
+                <strong class="text-cyan-300 font-mono text-xs block mb-1">🤖 Synthesized Response (LLaMA 3.1 LoRA):</strong>
+                "Found prime match: **Sanctuary Cove Villa 14 (Gold Coast)** at **AUD $1,980,000** (well under your $2.2M budget). Features 3 bedrooms, 3.5 bathrooms, and a private deep-water marina berth suitable for vessels up to 45ft. Would you like me to schedule a virtual tour or request the strata inspection report?"
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: VOICE AI AGENT SIMULATOR (VAPI + TWILIO) -->
+          <div id="tab-voice" class="playground-view hidden p-6 sm:p-8 flex flex-col gap-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4">
+              <div>
+                <h4 class="text-white font-bold font-outfit text-lg flex items-center gap-2">
+                  <span>Voice-Enabled AI Telephony Agent</span>
+                  <span class="text-[11px] font-mono text-purple-400 bg-purple-950/80 px-2 py-0.5 rounded border border-purple-500/30">VAPI • Twilio SIP • Deepgram</span>
+                </h4>
+                <p class="text-xs text-slate-400 mt-1">Autonomous multi-turn phone support agent for real-time buyer inquiries.</p>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono">
+                <span class="text-slate-400">Call State:</span>
+                <span id="call-state-pill" class="text-slate-300 bg-slate-800 px-2.5 py-0.5 rounded-full">Ready</span>
+              </div>
+            </div>
+
+            <!-- Voice Call Interface Mockup -->
+            <div class="flex flex-col items-center justify-center p-6 rounded-2xl bg-[#080c17] border border-white/5 text-center gap-4">
+              
+              <!-- Pulsing Waveform Visualizer -->
+              <div id="waveform-container" class="flex items-center justify-center gap-1.5 h-16 w-full max-w-xs">
+                <div class="wave-bar h-3"></div>
+                <div class="wave-bar h-6"></div>
+                <div class="wave-bar h-10"></div>
+                <div class="wave-bar h-14"></div>
+                <div class="wave-bar h-8"></div>
+                <div class="wave-bar h-12"></div>
+                <div class="wave-bar h-4"></div>
+              </div>
+
+              <div class="text-sm font-outfit text-slate-200">
+                Simulated Twilio Trunk: <span class="font-mono text-cyan-400">+1 (800) 555-REALTY</span>
+              </div>
+
+              <!-- Call Trigger Buttons -->
+              <div class="flex items-center gap-4">
+                <button id="start-call-btn" class="btn-primary py-3 px-6 rounded-full font-bold text-xs uppercase tracking-wider flex items-center gap-2">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>Simulate Incoming Call</span>
+                </button>
+                <button id="end-call-btn" class="btn-ghost text-red-400 hover:text-red-300 py-3 px-5 rounded-full font-bold text-xs uppercase tracking-wider hidden flex items-center gap-2 border border-red-500/30">
+                  <i class="fa-solid fa-phone-slash"></i>
+                  <span>Hang Up</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Live Call Transcript Stream -->
+            <div class="rounded-xl bg-[#070a12] border border-white/10 p-5 font-mono text-xs space-y-3">
+              <div class="text-slate-400 font-bold border-b border-white/5 pb-2 flex justify-between">
+                <span><i class="fa-solid fa-comment-dots mr-1 text-purple-400"></i> Real-Time STT & TTS Pipeline</span>
+                <span class="text-slate-400 text-[10px]">Sampling: 16kHz Opus</span>
+              </div>
+              <div id="voice-transcript" class="space-y-3 font-sans text-sm">
+                <div class="flex gap-3">
+                  <span class="font-mono text-xs text-purple-400 flex-shrink-0">Caller:</span>
+                  <p class="text-slate-300">"Hey, I'm calling about the 4-bedroom house on Ocean Avenue. Is it still available for a Saturday viewing?"</p>
+                </div>
+                <div class="flex gap-3 bg-white/[0.02] p-2.5 rounded-lg border border-white/5">
+                  <span class="font-mono text-xs text-cyan-400 flex-shrink-0">AI Agent:</span>
+                  <p class="text-slate-100">"Hello! Yes, 42 Ocean Avenue is currently on the market. I have open slots with the listing agent this Saturday at 11:00 AM or 3:30 PM. Would you like me to reserve the 11:00 AM slot for you?"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: VISION & OCR PO PARSER SIMULATOR -->
+          <div id="tab-vision" class="playground-view hidden p-6 sm:p-8 flex flex-col gap-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4">
+              <div>
+                <h4 class="text-white font-bold font-outfit text-lg flex items-center gap-2">
+                  <span>Intelligent PO & Vehicle OCR Pipeline</span>
+                  <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/30">YOLO • OpenCV • TrOCR</span>
+                </h4>
+                <p class="text-xs text-slate-400 mt-1">Extracts SKU details, vendor information, quantities, and license plates from raw images.</p>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+                <span>Model Confidence:</span>
+                <span class="text-emerald-400 font-bold">99.2%</span>
+              </div>
+            </div>
+
+            <!-- Pipeline Selection Toggle -->
+            <div class="flex gap-3">
+              <button class="vision-mode-btn active" data-vision="po">
+                <i class="fa-solid fa-file-invoice mr-1.5"></i> Purchase Order OCR (StoreTransform)
+              </button>
+              <button class="vision-mode-btn" data-vision="anpr">
+                <i class="fa-solid fa-car mr-1.5"></i> Vehicle Number Plate (ANPR)
+              </button>
+            </div>
+
+            <!-- Simulator Action Area -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="rounded-xl bg-[#070a12] border border-white/10 p-4 flex flex-col justify-between">
+                <div>
+                  <div class="text-xs font-mono text-slate-400 mb-2">Simulated Input Document / Image:</div>
+                  <div id="vision-sample-box" class="h-44 rounded-lg bg-[#0d1220] border border-dashed border-cyan-500/30 flex flex-col items-center justify-center p-4 text-center">
+                    <i class="fa-solid fa-file-invoice-dollar text-3xl text-cyan-400 mb-2"></i>
+                    <div class="text-xs font-mono text-slate-300">Apex Corp - Purchase Order #PO-50392</div>
+                    <div class="text-[11px] text-slate-500 mt-1">Vendor: Apex Industrial Supplies | SKU-9941</div>
+                  </div>
+                </div>
+                <button id="extract-vision-btn" class="btn-primary w-full mt-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-expand"></i> Run OCR Extraction
+                </button>
+              </div>
+
+              <!-- Extracted JSON Data -->
+              <div class="rounded-xl bg-[#070a12] border border-white/10 p-4 flex flex-col">
+                <div class="text-xs font-mono text-slate-400 mb-2 flex justify-between">
+                  <span>Structured JSON Output:</span>
+                  <span class="text-emerald-400 font-mono">Synced to Sellercloud & GCP</span>
+                </div>
+                <pre id="ocr-json-output" class="text-[11px] font-mono text-cyan-300 bg-black/40 p-3 rounded-lg overflow-x-auto flex-1 border border-white/5">
+{
+  "purchase_order": "PO-50392",
+  "vendor": "Apex Industrial Supplies Ltd",
+  "vendor_email": "orders@apexindustrial.com",
+  "total_items": 140,
+  "line_items": [
+    { "sku": "APX-8820", "qty": 100, "unit_price": 45.00 },
+    { "sku": "APX-3011", "qty": 40, "unit_price": 12.50 }
+  ],
+  "total_amount_usd": 5000.00,
+  "erp_sync_status": "AUTO_APPROVED"
+}</pre>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- DETAILED PROFESSIONAL EXPERIENCE (STORETRANSFORM, ACHYUT LABS, ADVAITUX, INNOVATICS) -->
+    <section id="experience" class="py-20 relative border-t border-white/5 bg-[#07090e]">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-4">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Professional Career History</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white tracking-tight">
+            Work <span class="gradient-text">Experience</span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-base sm:text-lg">
+            Progressive trajectory from digital growth strategy to cutting-edge AI-ML engineering and autonomous multi-agent systems.
+          </p>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="max-w-4xl mx-auto flex flex-col gap-8 relative">
+          
+          <!-- Timeline Vertical Track -->
+          <div class="absolute left-4 sm:left-8 top-4 bottom-4 w-0.5 bg-gradient-to-b from-cyan-500 via-purple-500 to-transparent hidden sm:block"></div>
+
+          <!-- 1. AdvaitUX Pvt Ltd -->
+          <div class="experience-card relative sm:pl-20 group">
+            <div class="timeline-dot hidden sm:flex items-center justify-center">
+              <div class="w-3.5 h-3.5 rounded-full bg-cyan-400 shadow-lg shadow-cyan-400/50"></div>
+            </div>
+            <div class="rounded-2xl p-6 sm:p-8 bg-[#0e1322] border border-cyan-500/30 hover:border-cyan-400 transition-all duration-300 shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-cyan-400 transition-colors">
+                    Jr. AI-ML Developer / Engineer
+                  </h3>
+                  <div class="text-sm font-mono text-cyan-300 font-semibold mt-0.5">
+                    AdvaitUX Pvt Ltd • Surat, India (Global Projects)
+                  </div>
+                </div>
+                <div class="text-xs font-mono text-slate-400 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10 w-fit">
+                  April 2025 – Present
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Leading the engineering of production conversational AI systems, LoRA parameter-efficient fine-tuning, and voice-first AI agents for enterprise deployment.
+              </p>
+
+              <ul class="text-sm text-slate-300 space-y-2.5 mb-5 list-disc list-inside">
+                <li><strong class="text-white">Real Estate RAG Conversational Bot:</strong> Built LLM-based architecture using Retrieval-Augmented Generation (RAG) with semantic vector search to ground models in domain-specific property datasets.</li>
+                <li><strong class="text-white">LoRA Fine-Tuning:</strong> Fine-tuned <span class="text-cyan-400 font-mono">LLaMA 3.1</span> using Low-Rank Adaptation (LoRA), optimizing memory efficiency and achieving superior domain accuracy.</li>
+                <li><strong class="text-white">Synthetic Training Pipelines:</strong> Generated high-quality conversational datasets via Claude using customized multi-persona system prompts.</li>
+                <li><strong class="text-white">Autonomous Voice Agent:</strong> Built real-time voice AI using <span class="text-purple-400 font-mono">VAPI & Twilio</span> with low-latency STT/TTS pipelines for automated customer and property inquiries.</li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                <span class="skill-pill">LLaMA 3.1</span>
+                <span class="skill-pill">LoRA</span>
+                <span class="skill-pill">RAG & Vector Search</span>
+                <span class="skill-pill">VAPI</span>
+                <span class="skill-pill">Twilio</span>
+                <span class="skill-pill">Claude</span>
+                <span class="skill-pill">FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. StoreTransform (E-commerce Automation & Client Agency) -->
+          <div class="experience-card relative sm:pl-20 group">
+            <div class="timeline-dot hidden sm:flex items-center justify-center">
+              <div class="w-3.5 h-3.5 rounded-full bg-purple-400 shadow-lg shadow-purple-400/50"></div>
+            </div>
+            <div class="rounded-2xl p-6 sm:p-8 bg-[#0e1322] border border-purple-500/30 hover:border-purple-400 transition-all duration-300 shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-purple-300 transition-colors">
+                    AI Automation & Vision Consultant
+                  </h3>
+                  <div class="text-sm font-mono text-purple-300 font-semibold mt-0.5">
+                    StoreTransform • Cross-Border E-Commerce & Retail Automation
+                  </div>
+                </div>
+                <div class="text-xs font-mono text-slate-400 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10 w-fit">
+                  Collaborative Project
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Architected end-to-end intelligent automation workflows connecting e-commerce inventory with LLM reasoning and Computer Vision document parsing.
+              </p>
+
+              <ul class="text-sm text-slate-300 space-y-2.5 mb-5 list-disc list-inside">
+                <li><strong class="text-white">AI Purchase Order Agent:</strong> Automated PO generation and live synchronization with <span class="text-cyan-400 font-mono">Sellercloud</span> and Google Cloud relational databases.</li>
+                <li><strong class="text-white">Computer Vision & OCR:</strong> Deployed OCR models (EasyOCR / TrOCR) to extract handwritten and digital SKU numbers, vendor details, and invoices with automatic validation.</li>
+                <li><strong class="text-white">Data Query Agent:</strong> Integrated Gemini & Claude to convert plain English questions into optimized SQL queries for instant business metrics.</li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                <span class="skill-pill">Computer Vision OCR</span>
+                <span class="skill-pill">Sellercloud ERP</span>
+                <span class="skill-pill">Google Cloud</span>
+                <span class="skill-pill">Claude / Gemini SQL</span>
+                <span class="skill-pill">n8n Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Innovatics LLP -->
+          <div class="experience-card relative sm:pl-20 group">
+            <div class="timeline-dot hidden sm:flex items-center justify-center">
+              <div class="w-3.5 h-3.5 rounded-full bg-emerald-400 shadow-lg shadow-emerald-400/50"></div>
+            </div>
+            <div class="rounded-2xl p-6 sm:p-8 bg-[#0e1322] border border-white/10 hover:border-emerald-400/50 transition-all duration-300 shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-emerald-300 transition-colors">
+                    Digital Marketing & Analytics Executive
+                  </h3>
+                  <div class="text-sm font-mono text-emerald-400 font-semibold mt-0.5">
+                    Innovatics LLP • Ahmedabad, India
+                  </div>
+                </div>
+                <div class="text-xs font-mono text-slate-400 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10 w-fit">
+                  March 2023 – March 2025
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Spearheaded performance campaigns, conversion funnel optimization, and automated customer acquisition pipelines utilizing data analytics.
+              </p>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                <span class="skill-pill">Performance Marketing</span>
+                <span class="skill-pill">Conversion Optimization</span>
+                <span class="skill-pill">Data Analytics</span>
+                <span class="skill-pill">Funnel Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. AchyutLabs Pvt Ltd (Australian Agency) -->
+          <div class="experience-card relative sm:pl-20 group">
+            <div class="timeline-dot hidden sm:flex items-center justify-center">
+              <div class="w-3.5 h-3.5 rounded-full bg-blue-400 shadow-lg shadow-blue-400/50"></div>
+            </div>
+            <div class="rounded-2xl p-6 sm:p-8 bg-[#0e1322] border border-white/10 hover:border-blue-400/50 transition-all duration-300 shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-blue-300 transition-colors">
+                    Jr. SEO & SMM Executive
+                  </h3>
+                  <div class="text-sm font-mono text-blue-300 font-semibold mt-0.5">
+                    AchyutLabs Pvt Ltd • Australian Digital Agency (Ahmedabad & Melbourne)
+                  </div>
+                </div>
+                <div class="text-xs font-mono text-slate-400 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10 w-fit">
+                  July 2021 – Feb 2023
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Delivered technical SEO, content strategy, and social media marketing for Australian enterprise accounts and international clientele, boosting organic traffic and brand authority.
+              </p>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                <span class="skill-pill">Australian Accounts</span>
+                <span class="skill-pill">Technical SEO</span>
+                <span class="skill-pill">Social Media Marketing</span>
+                <span class="skill-pill">Market Research</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section id="projects" class="py-20 relative border-t border-white/5 bg-[#090d18]">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-4">
+            <i class="fa-solid fa-code"></i>
+            <span>Engineering Portfolio</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white tracking-tight">
+            Featured <span class="gradient-text">AI Projects</span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-base sm:text-lg">
+            Production-tested AI implementations combining generative intelligence, computer vision, and autonomous agents.
+          </p>
+
+          <!-- Project Filter Tabs -->
+          <div class="flex items-center justify-center flex-wrap gap-2 mt-8">
+            <button class="project-filter-btn active" data-filter="all">All Projects</button>
+            <button class="project-filter-btn" data-filter="genai">Generative AI & LLMs</button>
+            <button class="project-filter-btn" data-filter="agents">Autonomous Agents</button>
+            <button class="project-filter-btn" data-filter="vision">Computer Vision & OCR</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          
+          <!-- PROJECT 1: CRM & PO Automation -->
+          <div class="project-card group rounded-2xl bg-[#0f1424] border border-white/10 hover:border-cyan-400/50 transition-all duration-300 flex flex-col overflow-hidden shadow-2xl" data-category="agents genai vision">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-black/40">
+              <img src="./assets/project_crm.jpg" alt="AI-Powered Role-Based CRM & Intelligent PO Automation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0f1424] via-transparent to-transparent"></div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="text-[11px] font-mono font-bold bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  StoreTransform & GCP
+                </span>
+                <span class="text-[11px] font-mono font-bold bg-purple-950/90 text-purple-300 border border-purple-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  Gemini + Claude
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-cyan-400 transition-colors">
+                  AI-Powered Role-Based CRM & Intelligent Purchase Order Automation
+                </h3>
+                <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                  End-to-end role-based CRM managing POs, vendors, warehouses, containers, and inventory. Features an AI Data Agent using Gemini and Claude to convert English queries into real-time SQL for Sellercloud ERP and GCP databases, plus OCR extraction for physical invoices.
+                </p>
+                <div class="mt-4 space-y-1.5 text-xs text-slate-400 font-mono">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-cyan-400"></i>
+                    <span>Automated PO sync with Sellercloud & Google Cloud</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-cyan-400"></i>
+                    <span>OCR document workflow extracts SKUs, vendors, prices</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="skill-pill-sm">Claude AI</span>
+                  <span class="skill-pill-sm">Gemini AI</span>
+                  <span class="skill-pill-sm">OCR</span>
+                  <span class="skill-pill-sm">Sellercloud</span>
+                  <span class="skill-pill-sm">SQL Agent</span>
+                </div>
+                <button class="open-project-modal text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center gap-1.5 whitespace-nowrap ml-2" data-project="crm">
+                  <span>Deep Dive</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Real Estate RAG & LoRA -->
+          <div class="project-card group rounded-2xl bg-[#0f1424] border border-white/10 hover:border-purple-400/50 transition-all duration-300 flex flex-col overflow-hidden shadow-2xl" data-category="genai">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-black/40">
+              <img src="./assets/project_rag.jpg" alt="Real Estate Conversational Chatbot using RAG & LLM" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0f1424] via-transparent to-transparent"></div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="text-[11px] font-mono font-bold bg-purple-950/90 text-purple-300 border border-purple-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  AdvaitUX Production
+                </span>
+                <span class="text-[11px] font-mono font-bold bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  LLaMA 3.1 LoRA
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-purple-300 transition-colors">
+                  Real Estate Chatbot with Semantic RAG & LLaMA 3.1 LoRA Fine-Tuning
+                </h3>
+                <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                  Domain-grounded conversational agent for high-value real estate transactions. Built synthetic conversational datasets using Claude system prompts, implemented low-latency vector semantic search, and fine-tuned open weights LLaMA 3.1 model using LoRA.
+                </p>
+                <div class="mt-4 space-y-1.5 text-xs text-slate-400 font-mono">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-purple-400"></i>
+                    <span>Parameter-efficient LoRA tuning optimizes compute memory</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-purple-400"></i>
+                    <span>Semantic retrieval pipeline eliminates LLM hallucinations</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="skill-pill-sm">LLaMA 3.1</span>
+                  <span class="skill-pill-sm">LoRA</span>
+                  <span class="skill-pill-sm">RAG</span>
+                  <span class="skill-pill-sm">Claude Synthetics</span>
+                  <span class="skill-pill-sm">FastAPI</span>
+                </div>
+                <button class="open-project-modal text-purple-400 hover:text-purple-300 text-sm font-bold flex items-center gap-1.5 whitespace-nowrap ml-2" data-project="rag">
+                  <span>Deep Dive</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Voice-Enabled AI Agent (VAPI & Twilio) -->
+          <div class="project-card group rounded-2xl bg-[#0f1424] border border-white/10 hover:border-cyan-400/50 transition-all duration-300 flex flex-col overflow-hidden shadow-2xl" data-category="agents genai">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-[#0a0f1d] flex items-center justify-center p-8">
+              <div class="w-full h-full rounded-xl bg-gradient-to-br from-cyan-950/40 via-purple-950/40 to-slate-900 border border-white/10 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-3xl mb-3 shadow-lg shadow-cyan-500/20">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <div class="font-outfit font-bold text-white text-lg">Autonomous Voice AI Telephony</div>
+                <div class="text-xs font-mono text-cyan-300 mt-1">Twilio SIP Trunking + VAPI AI Orchestration</div>
+              </div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="text-[11px] font-mono font-bold bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  VAPI Voice
+                </span>
+                <span class="text-[11px] font-mono font-bold bg-purple-950/90 text-purple-300 border border-purple-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  Twilio SIP
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-cyan-400 transition-colors">
+                  Autonomous Voice-Enabled AI Agent for Real-Time Calls
+                </h3>
+                <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                  Configured voice-based conversational AI agent using VAPI and Twilio, enabling automated two-way phone conversations with customers. Configured phone number provisioning, speech-to-text, and low-latency text-to-speech pipelines.
+                </p>
+                <div class="mt-4 space-y-1.5 text-xs text-slate-400 font-mono">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-cyan-400"></i>
+                    <span>Sub-second voice latency with streaming LLM responses</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-cyan-400"></i>
+                    <span>Twilio inbound & outbound call provisioning and IVR routing</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="skill-pill-sm">VAPI</span>
+                  <span class="skill-pill-sm">Twilio</span>
+                  <span class="skill-pill-sm">Deepgram STT</span>
+                  <span class="skill-pill-sm">Voice AI</span>
+                  <span class="skill-pill-sm">FastAPI</span>
+                </div>
+                <button class="open-project-modal text-cyan-400 hover:text-cyan-300 text-sm font-bold flex items-center gap-1.5 whitespace-nowrap ml-2" data-project="voice">
+                  <span>Deep Dive</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: ANPR Number Plate Detection -->
+          <div class="project-card group rounded-2xl bg-[#0f1424] border border-white/10 hover:border-emerald-400/50 transition-all duration-300 flex flex-col overflow-hidden shadow-2xl" data-category="vision">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-[#0a0f1d] flex items-center justify-center p-8">
+              <div class="w-full h-full rounded-xl bg-gradient-to-br from-emerald-950/40 via-cyan-950/40 to-slate-900 border border-white/10 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-3xl mb-3 shadow-lg shadow-emerald-500/20">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+                <div class="font-outfit font-bold text-white text-lg">AI Vehicle Number Plate ANPR</div>
+                <div class="text-xs font-mono text-emerald-300 mt-1">YOLO Object Detection + OpenCV + TrOCR</div>
+              </div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="text-[11px] font-mono font-bold bg-emerald-950/90 text-emerald-300 border border-emerald-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  Computer Vision
+                </span>
+                <span class="text-[11px] font-mono font-bold bg-cyan-950/90 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full backdrop-blur-md">
+                  YOLO + TrOCR
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl sm:text-2xl font-bold font-outfit text-white group-hover:text-emerald-300 transition-colors">
+                  Automatic Vehicle Number Plate Detection & Recognition (ANPR)
+                </h3>
+                <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                  AI-powered system for automatic license plate detection and text recognition using YOLO for bounding box detection, OpenCV image morphology and filtering, and EasyOCR/TrOCR for high-accuracy alphanumeric character recognition.
+                </p>
+                <div class="mt-4 space-y-1.5 text-xs text-slate-400 font-mono">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Detects license plates from car video streams and high-speed footage</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Trained for smart automated parking lots and traffic toll systems</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="skill-pill-sm">YOLO</span>
+                  <span class="skill-pill-sm">OpenCV</span>
+                  <span class="skill-pill-sm">EasyOCR</span>
+                  <span class="skill-pill-sm">TrOCR</span>
+                  <span class="skill-pill-sm">Python</span>
+                </div>
+                <button class="open-project-modal text-emerald-400 hover:text-emerald-300 text-sm font-bold flex items-center gap-1.5 whitespace-nowrap ml-2" data-project="vision">
+                  <span>Deep Dive</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TECHNICAL SKILLS & STACK RADAR -->
+    <section id="skills" class="py-20 relative border-t border-white/5 bg-[#07090e]">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-4">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Engineering Capabilities</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white tracking-tight">
+            Skills & <span class="gradient-text">Tech Radar</span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-base sm:text-lg">
+            Specialized toolkit spanning enterprise LLM orchestration, deep learning frameworks, and autonomous multi-agent pipelines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Category 1: Generative AI & LLMs -->
+          <div class="skill-card rounded-2xl p-6 bg-[#0e1322] border border-white/10 hover:border-cyan-400/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-4">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="text-lg font-bold font-outfit text-white mb-2">Generative AI & LLMs</h3>
+            <p class="text-xs text-slate-400 mb-4">Fine-tuning, retrieval augmentation, and prompt optimization.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">LLaMA 3.1</span>
+              <span class="skill-tag">LoRA Tuning</span>
+              <span class="skill-tag">RAG Pipelines</span>
+              <span class="skill-tag">Claude 3.5 Sonnet</span>
+              <span class="skill-tag">Gemini Pro</span>
+              <span class="skill-tag">Groq LPU</span>
+              <span class="skill-tag">Synthetic Data Gen</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Agentic AI & Automation -->
+          <div class="skill-card rounded-2xl p-6 bg-[#0e1322] border border-white/10 hover:border-purple-400/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl mb-4">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="text-lg font-bold font-outfit text-white mb-2">Autonomous Agents</h3>
+            <p class="text-xs text-slate-400 mb-4">State machines, telephony voice bots, and tool-calling.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">Agentic AI</span>
+              <span class="skill-tag">VAPI Voice</span>
+              <span class="skill-tag">Twilio SIP</span>
+              <span class="skill-tag">n8n Automation</span>
+              <span class="skill-tag">SQL Data Agents</span>
+              <span class="skill-tag">Function Calling</span>
+              <span class="skill-tag">LangChain</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Computer Vision & ML -->
+          <div class="skill-card rounded-2xl p-6 bg-[#0e1322] border border-white/10 hover:border-emerald-400/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl mb-4">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="text-lg font-bold font-outfit text-white mb-2">Computer Vision & ML</h3>
+            <p class="text-xs text-slate-400 mb-4">Object detection, optical character recognition, and analytics.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">YOLO (v8/v11)</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">EasyOCR</span>
+              <span class="skill-tag">TrOCR</span>
+              <span class="skill-tag">Scikit-Learn</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Frameworks & Platforms -->
+          <div class="skill-card rounded-2xl p-6 bg-[#0e1322] border border-white/10 hover:border-indigo-400/40 transition-all">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl mb-4">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3 class="text-lg font-bold font-outfit text-white mb-2">Backend & Deploy</h3>
+            <p class="text-xs text-slate-400 mb-4">APIs, cloud databases, model hosting, and dev tools.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Python 3.x</span>
+              <span class="skill-tag">Hugging Face</span>
+              <span class="skill-tag">Google Cloud</span>
+              <span class="skill-tag">Sellercloud</span>
+              <span class="skill-tag">Antigravity</span>
+              <span class="skill-tag">Cursor</span>
+              <span class="skill-tag">Git / GitHub</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="py-20 relative border-t border-white/5 bg-[#090d18]">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono mb-4">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Academic Background & Continuous Learning</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-outfit font-black text-white tracking-tight">
+            Education & <span class="gradient-text">Certifications</span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-base sm:text-lg">
+            Combining analytical business acumen (MBA & BBA) with deep institutional AI-ML technical specialization.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-5xl mx-auto">
+          
+          <!-- Left: Academic Degrees -->
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            <h3 class="text-xl font-bold font-outfit text-white flex items-center gap-2 border-b border-white/10 pb-3">
+              <i class="fa-solid fa-university text-cyan-400"></i>
+              <span>Academic Qualifications</span>
+            </h3>
+
+            <!-- MBA -->
+            <div class="p-6 rounded-2xl bg-[#0e1322] border border-white/10 hover:border-cyan-500/30 transition-all">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h4 class="text-lg font-bold text-white font-outfit">Master of Business Administration (MBA)</h4>
+                  <div class="text-sm text-cyan-400 font-mono mt-0.5">Noble College, Junagadh (GTU)</div>
+                  <div class="text-xs text-slate-400 mt-1">Completed: June 2019</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-xl font-black font-outfit text-cyan-400">CPI: 8.62</div>
+                  <div class="text-[10px] text-slate-400 font-mono">Out of 10.0</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- BBA -->
+            <div class="p-6 rounded-2xl bg-[#0e1322] border border-white/10 hover:border-purple-500/30 transition-all">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h4 class="text-lg font-bold text-white font-outfit">Bachelor of Business Administration (BBA)</h4>
+                  <div class="text-sm text-purple-400 font-mono mt-0.5">Noble College, Junagadh (GTU)</div>
+                  <div class="text-xs text-slate-400 mt-1">Completed: June 2017</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-xl font-black font-outfit text-purple-400">CPI: 8.70</div>
+                  <div class="text-[10px] text-slate-400 font-mono">Out of 10.0</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Institutional Training -->
+            <div class="p-6 rounded-2xl bg-[#0e1322] border border-cyan-500/30">
+              <div class="text-xs font-mono text-cyan-400 uppercase tracking-wider font-bold mb-1">
+                Institutional Intensive Training (5 Months)
+              </div>
+              <h4 class="text-lg font-bold text-white font-outfit">Artificial Intelligence with Python</h4>
+              <div class="text-sm text-slate-300 mt-1">Desire Infotech Pvt Ltd • Gandhinagar</div>
+              <p class="text-xs text-slate-400 mt-2">
+                In-depth hands-on curriculum spanning neural networks, computer vision, data manipulation with NumPy/Pandas, model evaluation, and deployment pipelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Professional AI Certifications -->
+          <div class="lg:col-span-6 flex flex-col gap-4">
+            <h3 class="text-xl font-bold font-outfit text-white flex items-center gap-2 border-b border-white/10 pb-3">
+              <i class="fa-solid fa-award text-purple-400"></i>
+              <span>Verified AI/ML Credentials</span>
+            </h3>
+
+            <div class="space-y-3">
+              <div class="cert-item p-4 rounded-xl bg-[#0e1322] border border-white/5 hover:border-cyan-400/40 flex items-center justify-between">
+                <div>
+                  <div class="font-outfit font-semibold text-white text-sm">Deep Learning</div>
+                  <div class="text-xs font-mono text-slate-400">Simplilearn</div>
+                </div>
+                <span class="text-xs text-cyan-400 font-mono"><i class="fa-solid fa-circle-check"></i> Certified</span>
+              </div>
+
+              <div class="cert-item p-4 rounded-xl bg-[#0e1322] border border-white/5 hover:border-cyan-400/40 flex items-center justify-between">
+                <div>
+                  <div class="font-outfit font-semibold text-white text-sm">NLP and Text Mining for Beginners</div>
+                  <div class="text-xs font-mono text-slate-400">Simplilearn</div>
+                </div>
+                <span class="text-xs text-cyan-400 font-mono"><i class="fa-solid fa-circle-check"></i> Certified</span>
+              </div>
+
+              <div class="cert-item p-4 rounded-xl bg-[#0e1322] border border-white/5 hover:border-purple-400/40 flex items-center justify-between">
+                <div>
+                  <div class="font-outfit font-semibold text-white text-sm">Master Class in Artificial Intelligence</div>
+                  <div class="text-xs font-mono text-slate-400">NoviTech R&D</div>
+                </div>
+                <span class="text-xs text-purple-400 font-mono"><i class="fa-solid fa-circle-check"></i> Certified</span>
+              </div>
+
+              <div class="cert-item p-4 rounded-xl bg-[#0e1322] border border-white/5 hover:border-cyan-400/40 flex items-center justify-between">
+                <div>
+                  <div class="font-outfit font-semibold text-white text-sm">Machine Learning for Algorithms</div>
+                  <div class="text-xs font-mono text-slate-400">Simplilearn</div>
+                </div>
+                <span class="text-xs text-cyan-400 font-mono"><i class="fa-solid fa-circle-check"></i> Certified</span>
+              </div>
+
+              <div class="cert-item p-4 rounded-xl bg-[#0e1322] border border-white/5 hover:border-cyan-400/40 flex items-center justify-between">
+                <div>
+                  <div class="font-outfit font-semibold text-white text-sm">Python Libraries for Data Science</div>
+                  <div class="text-xs font-mono text-slate-400">Simplilearn</div>
+                </div>
+                <span class="text-xs text-cyan-400 font-mono"><i class="fa-solid fa-circle-check"></i> Certified</span>
+              </div>
+
+              <div class="cert-item p-4 rounded-xl bg-[#0e1322] border border-white/5 hover:border-emerald-400/40 flex items-center justify-between">
+                <div>
+                  <div class="font-outfit font-semibold text-white text-sm">Python Assessment</div>
+                  <div class="text-xs font-mono text-slate-400">LearnTube</div>
+                </div>
+                <span class="text-xs text-emerald-400 font-mono"><i class="fa-solid fa-circle-check"></i> Certified</span>
+              </div>
+            </div>
+
+            <!-- Languages spoken -->
+            <div class="mt-2 p-4 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">Languages:</span>
+              <div class="flex gap-3 text-xs font-medium text-slate-200">
+                <span class="bg-cyan-950/60 border border-cyan-500/20 px-2.5 py-1 rounded">English (Fluent)</span>
+                <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded">Hindi</span>
+                <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded">Gujarati (Native)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT & HIRE ME SECTION -->
+    <section id="contact" class="py-20 relative border-t border-white/5 bg-[#07090e]">
+      <div class="container mx-auto px-4 lg:px-8">
+        
+        <div class="max-w-4xl mx-auto rounded-3xl bg-gradient-to-br from-[#0e1424] via-[#0b0f19] to-[#07090e] border border-cyan-500/30 p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+          
+          <div class="absolute -top-24 -right-24 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
+            
+            <!-- Contact Info -->
+            <div class="md:col-span-7 flex flex-col gap-6">
+              
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono w-fit">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Open for Full-Time Roles & Consulting</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl font-outfit font-black text-white tracking-tight">
+                Let's Build Intelligent <span class="gradient-text">AI Systems</span> Together.
+              </h2>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Whether you need a fine-tuned LLM, an autonomous voice agent, a high-precision RAG pipeline, or custom Computer Vision OCR workflows — I'm ready to bring immediate measurable value to your team.
+              </p>
+
+              <!-- Quick Info List -->
+              <div class="space-y-3 pt-2">
+                
+                <!-- Email with copy toast -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.03] border border-white/10 group">
+                  <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-envelope text-cyan-400 text-lg"></i>
+                    <span class="font-mono text-xs sm:text-sm text-slate-200">dhavalsolanki480@gmail.com</span>
+                  </div>
+                  <button id="copy-email-btn" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 bg-cyan-950/60 px-3 py-1.5 rounded-lg border border-cyan-500/30 flex items-center gap-1.5 transition-colors" title="Copy to clipboard">
+                    <i class="fa-regular fa-copy"></i>
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.03] border border-white/10">
+                  <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-phone text-emerald-400 text-lg"></i>
+                    <span class="font-mono text-xs sm:text-sm text-slate-200">(+91) 9106862224</span>
+                  </div>
+                  <a href="https://wa.me/919106862224" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-emerald-400 hover:text-emerald-300 bg-emerald-950/60 px-3 py-1.5 rounded-lg border border-emerald-500/30 flex items-center gap-1.5 transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Chat</span>
+                  </a>
+                </div>
+
+                <!-- Location -->
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white/[0.03] border border-white/10 text-xs sm:text-sm text-slate-300">
+                  <i class="fa-solid fa-location-dot text-red-400 text-lg"></i>
+                  <span>Ahmedabad & Surat, Gujarat, India (Open to Remote Worldwide & Relocation)</span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Direct Contact Form -->
+            <div class="md:col-span-5 bg-[#080c16] rounded-2xl p-6 border border-white/10 shadow-xl">
+              <h3 class="text-lg font-bold font-outfit text-white mb-4">Send a Direct Message</h3>
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-400 mb-1" for="name">Your Name</label>
+                  <input type="text" id="name" required placeholder="e.g. Sarah Jenkins" class="w-full bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-sans transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-400 mb-1" for="email">Work Email</label>
+                  <input type="email" id="email" required placeholder="sarah@company.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-sans transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-400 mb-1" for="message">Project or Inquiry Details</label>
+                  <textarea id="message" rows="3" required placeholder="Tell me about your AI project, timeline, or open role..." class="w-full bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-cyan-400 font-sans transition-colors resize-none"></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+              <div id="form-feedback" class="hidden mt-3 p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-xs text-center font-mono">
+                Thank you! Your message has been prepared in your mail client.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Open Source Footer -->
+  <footer class="border-t border-white/10 bg-[#05070b] py-12 relative z-10 text-xs text-slate-400">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center font-outfit font-black text-cyan-400 text-sm">
+            DS
+          </div>
+          <div>
+            <div class="font-outfit font-bold text-white text-sm">Dhaval Solanki • AI-ML Developer</div>
+            <div class="text-[11px] text-slate-500 font-mono">Open-Source Portfolio Template • MIT License</div>
+          </div>
+        </div>
+
+        <!-- 1-Click Deploy Badges -->
+        <div class="flex items-center flex-wrap gap-3">
+          <a href="https://github.com/dhaval-solanki-das" target="_blank" rel="noopener noreferrer" class="btn-ghost px-3 py-1.5 rounded-lg text-slate-300 hover:text-white flex items-center gap-1.5">
+            <i class="fa-brands fa-github text-sm"></i>
+            <span>GitHub</span>
+          </a>
+          <span class="text-slate-600">|</span>
+          <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/40 border border-cyan-500/20 px-2.5 py-1 rounded">
+            ⚡ Ready for Netlify & Vercel
+          </span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span>Crafted for high performance & clean AI architecture</span>
+          <a href="#hero" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-cyan-400 transition-colors ml-2" title="Back to top">
+            <i class="fa-solid fa-arrow-up text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden transition-opacity duration-300">
+    <div class="bg-[#0e1324] border border-white/10 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+      <button id="close-modal-btn" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white transition-colors">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div id="modal-content" class="space-y-4">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-[#0e1322] border border-cyan-500/40 text-slate-100 px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 font-mono text-xs translate-y-20 opacity-0 transition-all duration-300">
+    <i class="fa-solid fa-circle-check text-cyan-400 text-sm"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
