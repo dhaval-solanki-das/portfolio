@@ -387,16 +387,74 @@
           <!-- About Right Fact Matrix -->
           <div class="lg:col-span-5 grid grid-cols-1 gap-4">
             
-            <div class="p-6 rounded-2xl bg-[#0e1322] border border-white/10 hover:border-cyan-500/30 transition-all shadow-xl">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-                  <i class="fa-solid fa-code"></i>
+            <!-- 1. Core Technical Focus & Stack (Revamped Modular Architecture) -->
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-[#0e1324] to-[#080c16] border border-cyan-500/25 hover:border-cyan-500/50 transition-all shadow-xl relative overflow-hidden group">
+              <div class="absolute -right-12 -top-12 w-36 h-36 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all pointer-events-none"></div>
+
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                    <i class="fa-solid fa-layer-group text-sm"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-outfit font-bold text-white text-base tracking-tight">Core Technical Focus & Stack</h3>
+                    <div class="text-[11px] font-mono text-cyan-400/90">Production AI & Autonomous Systems Toolkit</div>
+                  </div>
                 </div>
-                <h3 class="font-outfit font-bold text-white text-base">Core Technical Focus & Stack</h3>
+                <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-cyan-950/80 text-cyan-300 border border-cyan-500/30 hidden sm:inline-block">Core Stack</span>
               </div>
-              <p class="text-xs text-slate-300 leading-relaxed font-mono">
-                Agentic AI • AI Agents • Multi-Agent Intelligent Systems • LangGraph • LangChain • LangSmith • Data Agents • Intelligent Assistants • Computer Vision (YOLO, OpenCV, TrOCR) • Automation (n8n, make.com) • LLM Fine-Tuning (LLaMA, LoRA) • RAG Pipelines • Claude • Gemini • Python • FastAPI • VAPI • Twilio SIP • Vector & Relational DBs (Pinecone, ChromaDB, FAISS, MySQL, GCP)
-              </p>
+
+              <div class="space-y-3.5 pt-1">
+                <!-- Group 1: Agentic & Multi-Agent Systems -->
+                <div>
+                  <div class="text-[10px] font-mono uppercase tracking-wider font-bold text-cyan-300 mb-1.5 flex items-center gap-1.5">
+                    <i class="fa-solid fa-robot text-[10px]"></i>
+                    <span>Agentic AI & Multi-Agent Orchestration</span>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">Agentic AI</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">AI Agents</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">Multi-Agent Intelligent Systems</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-cyan-500/30 text-cyan-300 text-xs font-sans font-medium">LangGraph</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">LangChain</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">LangSmith</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">Data Agents</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">Intelligent Assistants</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-cyan-500/40 text-xs font-sans text-slate-200 transition-colors">AI Chatbot</span>
+                  </div>
+                </div>
+
+                <!-- Group 2: Generative AI, LLMs & Retrieval -->
+                <div>
+                  <div class="text-[10px] font-mono uppercase tracking-wider font-bold text-purple-300 mb-1.5 flex items-center gap-1.5">
+                    <i class="fa-solid fa-brain text-[10px]"></i>
+                    <span>LLM Fine-Tuning & Knowledge Retrieval</span>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-purple-500/30 text-purple-300 text-xs font-sans font-medium">LLaMA 3.1 LoRA Fine-Tuning</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-purple-500/40 text-xs font-sans text-slate-200 transition-colors">RAG Pipelines</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-purple-500/40 text-xs font-sans text-slate-200 transition-colors">Claude</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-purple-500/40 text-xs font-sans text-slate-200 transition-colors">Gemini</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-purple-500/40 text-xs font-sans text-slate-200 transition-colors">Vector & Relational DBs (Pinecone, ChromaDB, FAISS, MySQL, GCP)</span>
+                  </div>
+                </div>
+
+                <!-- Group 3: Voice AI, Computer Vision & Automation -->
+                <div>
+                  <div class="text-[10px] font-mono uppercase tracking-wider font-bold text-emerald-300 mb-1.5 flex items-center gap-1.5">
+                    <i class="fa-solid fa-bolt text-[10px]"></i>
+                    <span>Voice AI, Vision & Workflow Automation</span>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-emerald-500/30 text-emerald-300 text-xs font-sans font-medium">Voice AI (VAPI)</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-emerald-500/40 text-xs font-sans text-slate-200 transition-colors">Twilio SIP</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-emerald-500/40 text-xs font-sans text-slate-200 transition-colors">Computer Vision (YOLO, OpenCV, TrOCR)</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-emerald-500/40 text-xs font-sans text-slate-200 transition-colors">Automation (n8n, make.com)</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-emerald-500/40 text-xs font-sans text-slate-200 transition-colors">Python</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/10 hover:border-emerald-500/40 text-xs font-sans text-slate-200 transition-colors">FastAPI</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="p-6 rounded-2xl bg-[#0e1322] border border-white/10 hover:border-purple-500/30 transition-all shadow-xl">
