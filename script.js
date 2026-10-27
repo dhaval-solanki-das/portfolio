@@ -509,19 +509,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.status === 200 && data.success) {
           if (formFeedback) {
             formFeedback.className = 'mt-3 p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-xs text-center font-mono';
-            formFeedback.innerHTML = `✨ Message delivered directly to Dhaval's email! Opening WhatsApp...`;
+            formFeedback.innerHTML = `✨ Thank you for your submission! Your message has been sent directly to Dhaval.`;
             formFeedback.classList.remove('hidden');
           }
-          showToast('Message sent! Forwarding to WhatsApp...');
-
-          // Open WhatsApp with pre-filled inquiry details
-          const waText = encodeURIComponent(`Hi Dhaval,\n\nI just sent an inquiry through your portfolio:\n\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Project Details:*\n${message}`);
-          const waUrl = `https://wa.me/919106862224?text=${waText}`;
-
-          setTimeout(() => {
-            window.open(waUrl, '_blank');
-          }, 1000);
-
+          showToast('Thank you! Message sent successfully.');
           contactForm.reset();
         } else {
           throw new Error(data.message || 'Submission failed');
@@ -530,13 +521,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Submission error:', err);
         if (formFeedback) {
           formFeedback.className = 'mt-3 p-3 rounded-xl bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs text-center font-mono';
-          formFeedback.innerHTML = `Email delivery notice: Opening direct WhatsApp connection...`;
+          formFeedback.innerHTML = `Unable to send message at this moment. Please email directly to dhaval100lanki@gmail.com.`;
           formFeedback.classList.remove('hidden');
         }
-        showToast('Connecting via WhatsApp...');
-        const waText = encodeURIComponent(`Hi Dhaval,\n\nI tried reaching you via your portfolio:\n\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Project Details:*\n${message}`);
-        const waUrl = `https://wa.me/919106862224?text=${waText}`;
-        window.open(waUrl, '_blank');
+        showToast('Error sending message. Please try again.');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
