@@ -18,11 +18,11 @@ Ready for **instant 1-click deployment** on [Netlify](https://netlify.app) or [V
 - **Interactive Live AI Playground (Browser Simulator)**:
   - **RAG Semantic Search Simulator**: Queries vector nodes, shows real-time cosine similarity scores (0.95+), low latency metrics (~135ms), and synthesized responses with fine-tuned LLaMA 3.1.
   - **Voice AI Agent Simulator (VAPI + Twilio)**: Real-time telephony visualizer with simulated SIP connection, live audio waveform animation, and conversational customer support transcript.
-  - **Vision & OCR PO / Number Plate Extractor**: Switches between Purchase Order document extraction (StoreTransform) and Vehicle Number Plate detection (ANPR with YOLO and TrOCR).
+  - **Vision & OCR PO / Number Plate Extractor**: Switches between Purchase Order document extraction (Enterprise E-Commerce) and Vehicle Number Plate detection (ANPR with YOLO and TrOCR).
 - **Global Experience Matrix**:
-  - 🇦🇺 **Australia (AchyutLabs Pty Ltd)**: Melbourne & Brisbane accounts, digital growth analytics, search intelligence.
-  - 🇺🇸 🌐 **USA & Cross-Border (StoreTransform)**: Automated PO parsing, Computer Vision OCR, Sellercloud & GCP sync, Natural Language to SQL Data Agents (Claude/Gemini).
-  - 🇮🇳 **India & Global (AdvaitUX Pvt Ltd)**: LLaMA 3.1 LoRA fine-tuning, RAG conversational chatbots, VAPI/Twilio telephony voice agents.
+  - 🇦🇺 **Australia (Australian-Based Tech & Digital Transformation Agency)**: Melbourne & Brisbane enterprise accounts, digital transformation analytics.
+  - 🇺🇸 🌐 **USA & Global (E-Commerce AI & Automation Consultancy)**: Automated PO parsing, Computer Vision OCR, Sellercloud & GCP sync, Natural Language to SQL Data Agents (Claude/Gemini).
+  - 🇮🇳 **India & Global (AI-First Product & Engineering Studio)**: LLaMA 3.1 LoRA fine-tuning, RAG conversational chatbots, VAPI/Twilio telephony voice agents.
   - 🇬🇧 🇪🇺 **UK, Europe & Worldwide Clients**: Async cross-timezone collaboration delivering multi-agent workflows (LangGraph, make.com, n8n).
 - **Core AI & Agentic Stack**:
   - Agentic AI, Autonomous AI Agents, Multi-Agent Intelligent Systems, LangGraph, LangChain, LangSmith, Data Agents, Computer Vision (YOLO, OpenCV, TrOCR), Automation (n8n, make.com), Vector DBs (Pinecone, ChromaDB, FAISS).
@@ -97,7 +97,7 @@ dhaval-portfolio/
 ## 👤 About Dhaval Solanki
 
 - **Role**: AI-ML Developer | Agentic AI & RAG Specialist
-- **Email**: [dhavalsolanki480@gmail.com](mailto:dhavalsolanki480@gmail.com)
+- **Email**: [dhaval100lanki@gmail.com](mailto:dhaval100lanki@gmail.com)
 - **Phone**: (+91) 9106862224
 - **GitHub**: [github.com/dhaval-solanki-das](https://github.com/dhaval-solanki-das)
 

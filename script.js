@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectDetails = {
     crm: {
       title: "AI-Powered Role-Based CRM & Intelligent Purchase Order Automation",
-      subtitle: "Enterprise Workflow Automation • StoreTransform & GCP Integration",
+      subtitle: "Enterprise Workflow Automation • Cross-Border Retail & GCP Integration",
       metrics: ["Role-Based Access", "Claude & Gemini Agents", "Sellercloud Sync", "Computer Vision OCR"],
       body: `
         <p class="text-sm text-slate-300 leading-relaxed">
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     rag: {
       title: "Real Estate Conversational Chatbot using RAG & LLaMA 3.1 LoRA",
-      subtitle: "Domain-Specific LLM Fine-Tuning • AdvaitUX Production System",
+      subtitle: "Domain-Specific LLM Fine-Tuning • Enterprise Production System",
       metrics: ["LLaMA 3.1 Fine-Tuned", "LoRA PEFT", "Claude Synthetic Datasets", "Vector Semantic Search"],
       body: `
         <p class="text-sm text-slate-300 leading-relaxed">
@@ -465,33 +465,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText('dhavalsolanki480@gmail.com').then(() => {
+      navigator.clipboard.writeText('dhaval100lanki@gmail.com').then(() => {
         showToast('Email copied to clipboard!');
       }).catch(() => {
-        showToast('dhavalsolanki480@gmail.com');
+        showToast('dhaval100lanki@gmail.com');
       });
     });
   }
 
 
-  // 9. CONTACT FORM INTERACTION
+  // 9. CONTACT FORM INTERACTION (Web3Forms API + WhatsApp Auto-Notification)
   const contactForm = document.getElementById('contact-form');
   const formFeedback = document.getElementById('form-feedback');
+  const submitBtn = document.getElementById('contact-submit-btn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
 
-      const mailtoUrl = `mailto:dhavalsolanki480@gmail.com?subject=Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
-      
-      if (formFeedback) {
-        formFeedback.classList.remove('hidden');
+      if (!name || !email || !message) return;
+
+      const originalBtnHTML = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>Sending Message...</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
       }
-      showToast('Opening email client...');
-      window.location.href = mailtoUrl;
+
+      try {
+        const formData = new FormData(contactForm);
+        formData.append('subject', `Portfolio Inquiry from ${name}`);
+        formData.append('from_name', name);
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.status === 200 && data.success) {
+          if (formFeedback) {
+            formFeedback.className = 'mt-3 p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-xs text-center font-mono';
+            formFeedback.innerHTML = `✨ Message delivered directly to Dhaval's email! Opening WhatsApp...`;
+            formFeedback.classList.remove('hidden');
+          }
+          showToast('Message sent! Forwarding to WhatsApp...');
+
+          // Open WhatsApp with pre-filled inquiry details
+          const waText = encodeURIComponent(`Hi Dhaval,\n\nI just sent an inquiry through your portfolio:\n\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Project Details:*\n${message}`);
+          const waUrl = `https://wa.me/919106862224?text=${waText}`;
+
+          setTimeout(() => {
+            window.open(waUrl, '_blank');
+          }, 1000);
+
+          contactForm.reset();
+        } else {
+          throw new Error(data.message || 'Submission failed');
+        }
+      } catch (err) {
+        console.error('Submission error:', err);
+        if (formFeedback) {
+          formFeedback.className = 'mt-3 p-3 rounded-xl bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs text-center font-mono';
+          formFeedback.innerHTML = `Email delivery notice: Opening direct WhatsApp connection...`;
+          formFeedback.classList.remove('hidden');
+        }
+        showToast('Connecting via WhatsApp...');
+        const waText = encodeURIComponent(`Hi Dhaval,\n\nI tried reaching you via your portfolio:\n\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Project Details:*\n${message}`);
+        const waUrl = `https://wa.me/919106862224?text=${waText}`;
+        window.open(waUrl, '_blank');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+        }
+      }
     });
   }
 
